@@ -1,0 +1,8 @@
+pandas
+pandas
+tabulate
+tabulate
+mkdocs
+mkdocs
+mkdocs-material
+mkdocs-material
