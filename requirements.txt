@@ -3,3 +3,4 @@ tabulate
 mkdocs
 mkdocs-material
 yfinance
+matplotlib
