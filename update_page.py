@@ -1,8 +1,9 @@
 ﻿import pandas as pd
 import yfinance as yf
 from datetime import datetime
+from zoneinfo import ZoneInfo # 日本時間にするためのライブラリ
 
-# 1. 取得したい銘柄のシンボル（日経平均、S&P500、ドル円）
+# 1. 取得したい銘柄のシンボル
 tickers = {
     "日経平均株価": "^N225",
     "S&P 500": "^GSPC",
@@ -13,7 +14,7 @@ tickers = {
 data = []
 for name, symbol in tickers.items():
     ticker = yf.Ticker(symbol)
-    hist = ticker.history(period="1d") # 最新1日分のデータを取得
+    hist = ticker.history(period="1d")
     
     if not hist.empty:
         current_price = hist['Close'].iloc[-1]
@@ -28,8 +29,8 @@ df = pd.DataFrame(data)
 # 3. データをMarkdown形式の表に変換
 markdown_table = df.to_markdown(index=False)
 
-# 4. 現在の時刻を取得
-now = datetime.now().strftime("%Y年%m月%d日 %H:%M")
+# 4. 現在の時刻を取得（日本時間に設定）
+now = datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y年%m月%d日 %H:%M")
 
 # 5. ページ全体の内容を組み立てる
 page_content = f"""# 最新マーケット情報ポータル
