@@ -2,6 +2,7 @@
 import yfinance as yf
 import matplotlib.pyplot as plt
 from datetime import datetime
+import os # ファイルの存在確認に使うライブラリを追加
 from zoneinfo import ZoneInfo
 
 # 1. 取得したい銘柄のシンボル
@@ -11,44 +12,57 @@ tickers = {
     "ドル/円": "JPY=X"
 }
 
-# 2. 最新データを取得してリストにまとめる
-data = []
+data_dict = {}
+today_str = datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y/%m/%d")
+
+# 2. 最新データを取得
+display_data = []
 for name, symbol in tickers.items():
     ticker = yf.Ticker(symbol)
     hist = ticker.history(period="1d")
     
     if not hist.empty:
         current_price = hist['Close'].iloc[-1]
-        data.append({
+        data_dict[name] = round(current_price, 2)
+        display_data.append({
             "指標名": name,
-            "シンボル": symbol,
             "現在値": f"{current_price:,.2f}"
         })
 
-df = pd.DataFrame(data)
-markdown_table = df.to_markdown(index=False)
+# --- 【新規】毎日のデータをCSVファイルに自動蓄積する処理 ---
+csv_file = "docs/history.csv"
+new_row = {"日付": today_str, **data_dict}
+new_df = pd.DataFrame([new_row])
 
-# 3. 【新規】日経平均株価の過去1ヶ月のデータを取得してグラフ化する
+if os.path.exists(csv_file):
+    # 既にファイルがあれば、過去のデータを読み込んで今日のデータを追加
+    history_df = pd.read_csv(csv_file)
+    history_df = pd.concat([history_df, new_df], ignore_index=True)
+else:
+    # 初回は新規作成
+    history_df = new_df
+
+# エクセルで文字化けしないように utf-8-sig で保存
+history_df.to_csv(csv_file, index=False, encoding="utf-8-sig")
+# --------------------------------------------------------
+
+# 表とグラフの作成
+markdown_table = pd.DataFrame(display_data).to_markdown(index=False)
+
 nikkei = yf.Ticker("^N225")
-nikkei_hist = nikkei.history(period="1mo") # 過去1ヶ月分
+nikkei_hist = nikkei.history(period="1mo")
 
-# グラフの見た目を設定（※クラウド上での文字化けを防ぐため、英語表記にしています）
 plt.figure(figsize=(10, 5))
 plt.plot(nikkei_hist.index, nikkei_hist['Close'], marker='o', color='blue')
 plt.title("Nikkei 225 (Past 1 Month)")
-plt.xlabel("Date")
-plt.ylabel("Closing Price")
 plt.grid(True)
 plt.tight_layout()
-
-# グラフを「chart.png」という名前の画像としてdocsフォルダ内に保存
 plt.savefig("docs/chart.png")
 plt.close()
 
-# 4. 現在の時刻を取得
 now = datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y年%m月%d日 %H:%M")
 
-# 5. ページ全体の内容を組み立てる（画像の表示指定を追加）
+# ページ全体の内容を組み立て（ダウンロードリンクを追加）
 page_content = f"""# 最新マーケット情報ポータル
 
 このページはPythonプログラムによって自動生成されています。
@@ -60,10 +74,13 @@ page_content = f"""# 最新マーケット情報ポータル
 
 ## 日経平均株価推移（過去1ヶ月）
 ![チャート画像](chart.png)
+
+## 過去データのダウンロード
+システムが毎日自動記録しているデータベースは以下からダウンロードできます。
+[📥 履歴データ(CSV)をダウンロード](history.csv)
 """
 
-# 6. docs/index.md に上書き保存する
 with open("docs/index.md", "w", encoding="utf-8") as f:
     f.write(page_content)
 
-print("Webサイトを更新し、チャート画像を生成しました！")
+print("データの蓄積とサイトの更新が完了しました！")
