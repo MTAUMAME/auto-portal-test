@@ -2,11 +2,11 @@ name: Auto Update Portal
 
 on:
   schedule:
-    - cron: '0 22 * * *' # 毎日朝7時の定期実行
-  push:                  # ★【新規追加】PCからデータが送られてきたら
+    - cron: '0 22 * * *'
+  push:
     branches:
-      - main             # mainブランチへの送信を合図にする
-  workflow_dispatch:     # 手動ボタン（残しておきます）
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -28,7 +28,7 @@ jobs:
 
       - name: データの集計とページの自動更新
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python update_page.py
 
       - name: Webサイトとして公開（デプロイ）
