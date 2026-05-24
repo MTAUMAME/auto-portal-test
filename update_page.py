@@ -106,7 +106,7 @@ if target_trend:
     api_key = os.environ.get("GEMINI_API_KEY")
     if api_key:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel("gemini-3.5-flash")
         # AIへの命令文（プロンプト）
         prompt = f"現在日本のネット上で「{target_trend}」という話題がトレンド入りしています。この話題について、①どんな内容か（概要）、②なぜ注目されているのかの背景、③関連する事柄との比較やまとめ、をブログ読者向けに客観的で分かりやすく解説してください。Markdown形式で見出し（## や ###）を使ってきれいに装飾してください。"
         
