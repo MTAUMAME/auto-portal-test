@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 import os
 from zoneinfo import ZoneInfo
-import glob # フォルダの中身を検索するライブラリ
+import glob
+import feedparser # 【新規】RSS（ニュース）を読み取るライブラリ
 
 # 1. 準備と設定
 tickers = {
@@ -13,18 +14,16 @@ tickers = {
     "ドル/円": "JPY=X"
 }
 
-# 日本時間とファイル名用の日付を取得
 tz = ZoneInfo("Asia/Tokyo")
 now = datetime.now(tz)
 today_str_csv = now.strftime("%Y/%m/%d")
-date_filename = now.strftime("%Y-%m-%d") # 記事とグラフのファイル名（例：2026-05-24）
+date_filename = now.strftime("%Y-%m-%d")
 display_time = now.strftime("%Y年%m月%d日 %H:%M")
 
-# 保存用のフォルダを準備（フォルダが無ければ自動作成）
-os.makedirs("docs/articles", exist_ok=True) # 記事保存用
-os.makedirs("docs/charts", exist_ok=True)   # グラフ保存用
+os.makedirs("docs/articles", exist_ok=True)
+os.makedirs("docs/charts", exist_ok=True)
 
-# 2. 最新データを取得
+# 2. 最新の金融データを取得
 data_dict = {}
 display_data = []
 for name, symbol in tickers.items():
@@ -62,51 +61,56 @@ plt.title("Nikkei 225 (Past 1 Month)")
 plt.grid(True)
 plt.tight_layout()
 
-# グラフに日付をつけて保存（例：chart_2026-05-24.png）
 chart_filename = f"chart_{date_filename}.png"
 plt.savefig(f"docs/charts/{chart_filename}")
 plt.close()
 
-# 5. 【新規】今日の「記事ページ」を作成する
-article_content = f"""# {date_filename} のマーケット情報
+# 5. 【新規】Yahoo!ニュース（主要トピックス）を取得する
+rss_url = "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
+feed = feedparser.parse(rss_url)
+
+# ニュースを箇条書きのリンクとしてまとめる
+news_markdown = ""
+for entry in feed.entries[:5]: # 上位5件だけを取得
+    news_markdown += f"- [{entry.title}]({entry.link})\n"
+
+# 6. 今日の「記事ページ」を作成する（ニュースを追加）
+article_content = f"""# {date_filename} のマーケット＆ニュース情報
 
 **最終更新日時:** {display_time}
 
-## 主要指標一覧
+## 📰 今日の主要ニュース（Yahoo!ニュース）
+{news_markdown}
+
+## 📊 主要指標一覧
 {markdown_table}
 
-## 日経平均株価推移（過去1ヶ月）
+## 📈 日経平均株価推移（過去1ヶ月）
 ![チャート画像](../charts/{chart_filename})
 """
 
-# 今日の日付のファイルとして保存（例：docs/articles/2026-05-24.md）
 article_filepath = f"docs/articles/{date_filename}.md"
 with open(article_filepath, "w", encoding="utf-8") as f:
     f.write(article_content)
 
-# 6. 【新規】トップページ（index.md）を再構築する（記事一覧の作成）
-# articlesフォルダの中にある.mdファイルをすべて取得し、新しい順（降順）に並べ替える
+# 7. トップページ（index.md）を再構築する
 article_files = sorted(glob.glob("docs/articles/*.md"), reverse=True)
 
-index_content = f"""# 最新マーケット情報ポータル
+index_content = f"""# 最新ポータル情報まとめ
 
-システムが毎日自動で情報を収集し、個別の記事として蓄積しています。
+システムが毎日自動で金融データとニュースを収集し、蓄積しています。
 
-[📥 全期間の履歴データ(CSV)をダウンロード](history.csv)
+[📥 全期間の株価履歴データ(CSV)をダウンロード](history.csv)
 
-## 📅 過去のマーケット記事一覧
+## 📅 過去の自動生成記事一覧
 """
 
-# 取得した記事ファイルのリストから、リンク集を自動で生成する
 for file_path in article_files:
-    # ファイル名だけを取り出す（"docs/articles/2026-05-24.md" -> "2026-05-24"）
     file_name = os.path.basename(file_path).replace(".md", "")
-    # トップページからのリンク用URL
     link_path = f"articles/{file_name}/" 
-    # 目次に追加
-    index_content += f"- [{file_name} のマーケット情報]({link_path})\n"
+    index_content += f"- [{file_name} のマーケット＆ニュース情報]({link_path})\n"
 
 with open("docs/index.md", "w", encoding="utf-8") as f:
     f.write(index_content)
 
-print(f"記事 {date_filename}.md の作成と、トップページの更新が完了しました！")
+print(f"記事 {date_filename}.md の作成（ニュース追加版）が完了しました！")

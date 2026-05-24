@@ -4,3 +4,5 @@ mkdocs
 mkdocs-material
 yfinance
 matplotlib
+requests
+feedparser
