@@ -90,8 +90,11 @@ if os.path.exists(trend_log_file):
                     recent_trends.append(word)
 
 # Googleトレンドから上位の話題を取得
-trend_rss_url = "https://trends.google.co.jp/trends/trendingsearches/daily/rss?geo=JP"
-feed_trend = feedparser.parse(trend_rss_url)
+trend_rss_url = "https://trends.google.com/trends/trendingsearches/daily/rss?geo=JP"
+# ロボットではなく「普通のパソコン（Chromeブラウザ）からのアクセス」だと認識させる
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'}
+res = requests.get(trend_rss_url, headers=headers, timeout=10)
+feed_trend = feedparser.parse(res.content)
 
 target_trend = None
 for entry in feed_trend.entries:
