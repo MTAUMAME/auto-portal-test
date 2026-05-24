@@ -73,7 +73,7 @@ try:
 except Exception as e:
     weather_markdown = "天気情報の取得に失敗しました。"
 
-# 6. 【AI連携】Googleトレンドから話題を取得し、Geminiで記事生成
+# 6. 【AI連携】ネットのトレンド（はてなブックマーク）を取得し、Geminiで記事生成
 trend_log_file = "docs/trend_history.csv"
 cutoff_date = (now - timedelta(days=14)).strftime("%Y-%m-%d")
 recent_trends = []
@@ -81,7 +81,7 @@ recent_trends = []
 # 過去14日以内に取り上げた話題のリストを作成
 if os.path.exists(trend_log_file):
     with open(trend_log_file, "r", encoding="utf-8-sig") as f:
-        lines = f.readlines()[1:] # ヘッダーを飛ばす
+        lines = f.readlines()[1:] 
         for line in lines:
             parts = line.strip().split(',')
             if len(parts) >= 2:
@@ -89,16 +89,14 @@ if os.path.exists(trend_log_file):
                 if date_str >= cutoff_date:
                     recent_trends.append(word)
 
-# Googleトレンドから上位の話題を取得
-trend_rss_url = "https://trends.google.com/trends/trendingsearches/daily/rss?geo=JP"
-# ロボットではなく「普通のパソコン（Chromeブラウザ）からのアクセス」だと認識させる
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'}
-res = requests.get(trend_rss_url, headers=headers, timeout=10)
-feed_trend = feedparser.parse(res.content)
+# はてなブックマークの総合トレンドRSS（ロボットでもブロックされません）
+trend_rss_url = "https://b.hatena.ne.jp/hotentry/all.rss"
+feed_trend = feedparser.parse(trend_rss_url)
 
 target_trend = None
 for entry in feed_trend.entries:
     trend_word = entry.title
+    # 過去2週間に使っていない話題なら採用
     if trend_word not in recent_trends:
         target_trend = trend_word
         break
@@ -110,7 +108,7 @@ if target_trend:
         genai.configure(api_key=api_key)
         model = genai.GenerativeModel('gemini-1.5-flash')
         # AIへの命令文（プロンプト）
-        prompt = f"「{target_trend}」が現在日本のトレンド上位に入っています。この言葉について、①どんな内容か（概要）、②なぜ話題になっているのかの背景、③関連する事柄との比較やまとめ、をブログ読者向けに客観的で分かりやすく解説してください。Markdown形式で見出し（## や ###）を使ってきれいに装飾してください。"
+        prompt = f"現在日本のネット上で「{target_trend}」という話題がトレンド入りしています。この話題について、①どんな内容か（概要）、②なぜ注目されているのかの背景、③関連する事柄との比較やまとめ、をブログ読者向けに客観的で分かりやすく解説してください。Markdown形式で見出し（## や ###）を使ってきれいに装飾してください。"
         
         try:
             response = model.generate_content(prompt)
@@ -127,7 +125,7 @@ if target_trend:
     else:
         ai_generated_content = "APIキーが設定されていないため、AIによるトレンド解説をスキップしました。"
 else:
-    ai_generated_content = "新しいトレンドワードが見つかりませんでした（直近2週間の話題を全て網羅済みです）。"
+    ai_generated_content = "新しいトレンドが見つかりませんでした（直近2週間の話題を全て網羅済みです）。"
 
 # 7. 今日の「記事ページ」を組み立てる
 article_content = f"""# {date_filename} のトレンド＆マーケット情報
