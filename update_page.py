@@ -52,7 +52,7 @@ ai_generated_content = ""
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-3.0-flash-latest')
+    model = genai.GenerativeModel('gemini-3.0-flash')
     
     # オリジナリティを出すための「思考フレームワーク」を与えたプロンプト
     prompt = f"""
