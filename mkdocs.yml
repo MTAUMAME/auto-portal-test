@@ -1,3 +1,47 @@
-﻿site_name: 自動更新ポータルサイト
+﻿site_name: Premium Asset Media
+site_url: https://MTAUMAME.github.io/auto-portal-test/
+site_description: AIが分析する次世代マーケット＆トレンドポータル
+
 theme:
   name: material
+  language: ja
+  font:
+    text: Noto Sans JP
+    code: Roboto Mono
+  # 高級感のある落ち着いた配色
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: grey
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードへ
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: grey
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードへ
+  
+  features:
+    - navigation.tabs          # 上部にタブを表示
+    - navigation.top           # トップへ戻るボタン
+    - navigation.sections      # セクション構造化
+    - content.code.copy        # コードコピー
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - search.highlight
+
+extra_css:
+  - https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
