@@ -2,14 +2,12 @@ name: Auto Update Portal
 
 on:
   schedule:
-    # 1.【変更】渋滞を回避するため、朝7時17分（UTC 22:17）にズラしています
     - cron: '17 22 * * *'
   push:
     branches:
       - main
   workflow_dispatch:
 
-# 2.【追加】Node.js 20の警告エラーを完全に消し去る設定
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
@@ -39,7 +37,6 @@ jobs:
       - name: Webサイトとして公開（デプロイ）
         run: mkdocs gh-deploy --force
 
-      # 3.【追加・超重要】作られた記事を消さずにアーカイブとして蓄積するセーブ機能
       - name: 自動生成されたデータをGitHubに保存する
         run: |
           git config --global user.name "github-actions[bot]"
