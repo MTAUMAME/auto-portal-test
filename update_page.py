@@ -3,7 +3,7 @@ import glob
 import time
 import re
 import urllib.parse
-from datetime import datetime, timedelta
+from datetime import datetime
 from zoneinfo import ZoneInfo
 import feedparser
 import google.generativeai as genai
@@ -15,115 +15,119 @@ date_filename = now.strftime("%Y-%m-%d")
 display_time = now.strftime("%Y年%m月%d日 %H:%M")
 
 os.makedirs("docs/articles", exist_ok=True)
-trend_log_file = "docs/trend_history.csv"
-cutoff_date = (now - timedelta(days=14)).strftime("%Y-%m-%d")
-
-# 過去14日間のトレンド履歴を読み込む
-recent_trends = []
-if os.path.exists(trend_log_file):
-    with open(trend_log_file, "r", encoding="utf-8-sig") as f:
-        lines = f.readlines()[1:]
-        for line in lines:
-            parts = line.strip().split(',')
-            if len(parts) >= 2 and parts[0] >= cutoff_date:
-                recent_trends.append(parts[1])
-
-# 2. IT・テクノロジー・ガジェット特化のトレンドを取得
-trend_rss_url = "https://b.hatena.ne.jp/hotentry/it.rss"
-feed_trend = feedparser.parse(trend_rss_url)
-
-# まだ記事にしていない最新トレンドを「最大10個」リストアップ
-target_trends = []
-for entry in feed_trend.entries:
-    if entry.title not in recent_trends:
-        target_trends.append(entry.title)
-    if len(target_trends) >= 10:
-        break
-
-# 3. AIによる記事の連続生成
 api_key = os.environ.get("GEMINI_API_KEY")
-generated_files = []
 
-if api_key and target_trends:
-    genai.configure(api_key=api_key)
-    # 【変更】最新モデル「Gemini 3.5 Flash」を正確に指定
-    model = genai.GenerativeModel('gemini-3.5-flash')
+if not api_key:
+    print("APIキーが設定されていません。")
+    exit()
+
+genai.configure(api_key=api_key)
+
+# --------------------------------------------------
+# 【第一部】IT・ガジェット系記事の取得（Gemini 3.5 Flash）
+# --------------------------------------------------
+print("=== IT・ガジェット系記事の処理を開始 ===")
+feed_it = feedparser.parse("https://b.hatena.ne.jp/hotentry/it.rss")
+model_it = genai.GenerativeModel('gemini-3.5-flash')
+
+it_count = 0
+for entry in feed_it.entries:
+    if it_count >= 10: # ITは10件まで
+        break
+        
+    safe_title = re.sub(r'[\\/*?:"<>|]', "", entry.title)[:30]
+    filepath_it = f"docs/articles/IT_{date_filename}_{safe_title}.md"
     
-    for trend in target_trends:
-        print(f"「{trend}」の記事を生成中...")
+    # ガード機能：既存記事はスキップ（以前のプレフィックスなしファイルも考慮）
+    legacy_filepath = f"docs/articles/{date_filename}_{safe_title}.md"
+    if os.path.exists(filepath_it) or os.path.exists(legacy_filepath):
+        continue
         
-        # 【大改造】自己確認（Self-Verification）と最新情報の精査を組み込んだプロンプト
-        prompt = f"""
-        あなたはガジェットおよび最新AIテクノロジー専門のトップアフィリエイター兼リサーチャーです。
-        トレンドテーマ「{trend}」について、読者が商品やサービスを導入したくなるような比較・まとめ記事を書いてください。
+    print(f"[IT] 「{entry.title}」を生成中...")
+    prompt_it = f"ガジェット・最新AI専門ブログとして「{entry.title}」についてまとめ、価格や性能を比較し、サクラレビューを弾いた口コミを含め、アフィリエイトに繋がる提案をMarkdownで作成してください。"
+    
+    try:
+        response = model_it.generate_content(prompt_it)
+        if response.text and len(response.text.strip()) > 100:
+            with open(filepath_it, "w", encoding="utf-8") as f:
+                f.write(f"**最終更新日時:** {display_time}\n\n{response.text}")
+            it_count += 1
+            time.sleep(3)
+    except Exception as e:
+        print(f"[IT] エラー発生（API制限の可能性）: {e}")
+        print("IT系の処理を中断し、金融系の処理へ移行します。")
+        break # 3.5 Flashの上限に達した場合はITのみ中断して次へ進む
 
-        【厳守ルール：情報の鮮度と自己確認プロトコル】
-        1. 再帰的な事実確認（Self-Verification）の徹底：
-           記事を生成する過程で、「このスペック・バージョン・機能は本当に現在（2026年時点）の最新情報か？」「数年前の古いモデルのデータを出力していないか？」を再帰的かつ網羅的に自己チェックしてください。事実確認が取れない古いデータは排除し、最新かつ正確な情報のみを出力すること。
-        2. リアルな声の抽出（サクラ厳禁）：
-           Google、X、Instagram等のリアルな声を統合し、不自然な高評価（短すぎる「最高です」や同じ文言の連続）はBotと判定して完全に無視し、具体的なメリット・デメリットのみを採用すること。
-        3. 比較の明瞭化：
-           読者が知りたい「価格」「性能」「他との違い（旧世代との比較など）」を目に見えて分かりやすい形で比較すること（表組み必須）。
-        4. ブログとしての品質：
-           自然な「です・ます調」で統一し、不自然な直訳やAI特有の堅苦しい表現は排除すること。
-        5. 次のステップへ：
-           最後に、読者が次に取るべきアクション（購入や登録など）を促す一文を入れること。
+# --------------------------------------------------
+# 【第二部】金融・投資系記事の取得（Gemini 3.1 Flash Lite）
+# --------------------------------------------------
+print("=== 金融・投資系記事の処理を開始 ===")
+feed_finance = feedparser.parse("https://b.hatena.ne.jp/hotentry/economics.rss")
+model_finance = genai.GenerativeModel('gemini-3.1-flash-lite')
 
-        【構成】
-        # {trend}の最新まとめ＆徹底比較
-        ## 1. なぜ今話題になっているのか？
-        ## 2. 【最新版】価格と性能の徹底比較
-        ## 3. リアルな口コミ・レビュー（サクラ厳禁）
-        ## 4. 【結論】ズバリ、どんな人におすすめか？
-        ## 5. 次のステップへ
-        """
+finance_count = 0
+for entry in feed_finance.entries:
+    if finance_count >= 20: # 金融は20件程度まで
+        break
         
-        try:
-            response = model.generate_content(prompt)
-            article_body = response.text
-            
-            # ファイル名に使えない記号を削除して安全な名前を作成
-            safe_title = re.sub(r'[\\/*?:"<>|]', "", trend)[:30]
-            filename = f"{date_filename}_{safe_title}"
-            filepath = f"docs/articles/{filename}.md"
-            
-            # 個別記事ファイルの作成
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(f"**最終更新日時:** {display_time}\n\n{article_body}")
-            
-            generated_files.append({"title": trend, "filename": filename})
-            
-            # 履歴に保存
-            file_exists = os.path.exists(trend_log_file)
-            with open(trend_log_file, "a", encoding="utf-8-sig") as f:
-                if not file_exists:
-                    f.write("日付,話題\n")
-                f.write(f"{date_filename},{trend}\n")
-                
-            # APIの制限（無料枠）に引っかからないよう4秒待機
-            time.sleep(4)
-            
-        except Exception as e:
-            print(f"エラー発生 ({trend}): {e}")
+    safe_title = re.sub(r'[\\/*?:"<>|]', "", entry.title)[:30]
+    # 金融記事には「Finance_」という目印をつける
+    filepath_finance = f"docs/articles/Finance_{date_filename}_{safe_title}.md"
+    
+    # ガード機能：既存記事はスキップ
+    if os.path.exists(filepath_finance):
+        continue
+        
+    print(f"[金融] 「{entry.title}」を生成中...")
+    prompt_finance = f"""
+    金融・資産運用・新NISA専門のアフィリエイターとして「{entry.title}」のトレンドを分析してください。
+    【厳守】
+    1. 自己検証を行い最新情報を記載。
+    2. サクラを弾いたリアルな口コミを記載。
+    3. 手数料や利回りの比較表を作成。
+    4. 投資初心者向けの丁寧な口調。
+    5. 最後に証券口座開設など次のアクションを促す。
+    Markdown形式で出力してください。
+    """
+    
+    try:
+        response = model_finance.generate_content(prompt_finance)
+        if response.text and len(response.text.strip()) > 100:
+            with open(filepath_finance, "w", encoding="utf-8") as f:
+                f.write(f"**最終更新日時:** {display_time}\n\n{response.text}")
+            finance_count += 1
+            time.sleep(3)
+    except Exception as e:
+        print(f"[金融] エラー発生: {e}")
 
-# 4. トップページ（目次）の再構築
-article_files = sorted(glob.glob("docs/articles/*.md"), reverse=True)
-index_content = """# 最新ガジェット＆AI 比較ポータル
+# --------------------------------------------------
+# 【第三部】2つの独立したトップページ（目次）の作成
+# --------------------------------------------------
+all_files = sorted(glob.glob("docs/articles/*.md"), reverse=True)
+it_links = ""
+finance_links = ""
 
-毎日自動で最新テクノロジーのトレンドを収集し、自己検証プログラムによって精査された最新情報とリアルな口コミをもとに徹底比較しています。
-気になる記事をクリックして詳細を確認してください。
-
-## 📅 最新の記事一覧（アーカイブ）
-"""
-
-for file_path in article_files:
+for file_path in all_files:
     fname = os.path.basename(file_path).replace(".md", "")
-    display_title = fname.split("_", 1)[-1] if "_" in fname else fname
-    date_part = fname.split("_", 1)[0] if "_" in fname else ""
-    
-    index_content += f"* [{date_part}： {display_title}](articles/{urllib.parse.quote(fname)}/)\n"
+    # "Finance_" で始まるか判定して振り分け
+    if fname.startswith("Finance_"):
+        display_title = fname.replace("Finance_", "", 1)
+        display_title = display_title.split("_", 1)[-1] if "_" in display_title else display_title
+        date_part = fname.replace("Finance_", "", 1).split("_", 1)[0]
+        finance_links += f"* [{date_part}： {display_title}](articles/{urllib.parse.quote(fname)}/)\n"
+    else:
+        # IT_で始まるもの、または過去の無印ファイルはIT枠へ
+        display_title = fname.replace("IT_", "", 1)
+        display_title = display_title.split("_", 1)[-1] if "_" in display_title else display_title
+        date_part = fname.replace("IT_", "", 1).split("_", 1)[0]
+        it_links += f"* [{date_part}： {display_title}](articles/{urllib.parse.quote(fname)}/)\n"
 
+# 1. ITトップページ（index.md）
 with open("docs/index.md", "w", encoding="utf-8") as f:
-    f.write(index_content)
+    f.write("# 最新ガジェット＆AI アーカイブ\n\nITと最新テクノロジーの比較まとめです。\n\n## 💻 IT・ガジェット最新記事\n\n" + it_links)
 
-print("すべての記事生成とトップページの更新が完了しました！")
+# 2. 金融トップページ（finance.md）
+with open("docs/finance.md", "w", encoding="utf-8") as f:
+    f.write("# マネー＆投資 アーカイブ\n\n新NISAや資産運用の最新トレンド比較まとめです。\n\n## 📈 金融・経済最新記事\n\n" + finance_links)
+
+print("すべての処理とページの更新が完了しました！")
