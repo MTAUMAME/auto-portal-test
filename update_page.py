@@ -114,13 +114,15 @@ for file_path in all_files:
         display_title = fname.replace("Finance_", "", 1)
         display_title = display_title.split("_", 1)[-1] if "_" in display_title else display_title
         date_part = fname.replace("Finance_", "", 1).split("_", 1)[0]
-        finance_links += f"* [{date_part}： {display_title}](articles/{urllib.parse.quote(fname)}/)\n"
+        # 【修正】MkDocsの標準機能を利用し、直接 .md ファイルを指定する
+        finance_links += f"* [{date_part}： {display_title}](articles/{fname}.md)\n"
     else:
         # IT_で始まるもの、または過去の無印ファイルはIT枠へ
         display_title = fname.replace("IT_", "", 1)
         display_title = display_title.split("_", 1)[-1] if "_" in display_title else display_title
         date_part = fname.replace("IT_", "", 1).split("_", 1)[0]
-        it_links += f"* [{date_part}： {display_title}](articles/{urllib.parse.quote(fname)}/)\n"
+        # 【修正】MkDocsの標準機能を利用し、直接 .md ファイルを指定する
+        it_links += f"* [{date_part}： {display_title}](articles/{fname}.md)\n"
 
 # 1. ITトップページ（index.md）
 with open("docs/index.md", "w", encoding="utf-8") as f:
