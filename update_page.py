@@ -117,7 +117,7 @@ for file_path in all_files:
         display_title = fname.replace("Finance_", "", 1)
         display_title = display_title.split("_", 1)[-1] if "_" in display_title else display_title
         date_part = fname.replace("Finance_", "", 1).split("_", 1)[0]
-        finance_links += f"* [{date_part}： {display_title}]({safe_link})\n"
+        finance_links += f"* [{date_part}： {display_title}](../articles/{fname}.md)\n"
     else:
         # IT_で始まるもの、または過去の無印ファイルはIT枠へ
         display_title = fname.replace("IT_", "", 1)
