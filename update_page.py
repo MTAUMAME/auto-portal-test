@@ -110,20 +110,21 @@ finance_links = ""
 for file_path in all_files:
     fname = os.path.basename(file_path).replace(".md", "")
     
-    # 【修正】MkDocsに内部リンクとして確実に認識させるため、URLエンコード＋「.md」を付与
-    safe_link = f"articles/{urllib.parse.quote(fname)}.md"
+    # 【修正】MkDocsの標準機能に任せる、最もシンプルな正しいリンク
+    simple_link = f"articles/{fname}.md"
     
     if fname.startswith("Finance_"):
         display_title = fname.replace("Finance_", "", 1)
         display_title = display_title.split("_", 1)[-1] if "_" in display_title else display_title
         date_part = fname.replace("Finance_", "", 1).split("_", 1)[0]
-        finance_links += f"* [{date_part}： {display_title}](../articles/{fname}.md)\n"
+        # 金融ページ用リンク（../ を削除）
+        finance_links += f"* [{date_part}： {display_title}]({simple_link})\n"
     else:
-        # IT_で始まるもの、または過去の無印ファイルはIT枠へ
+        # ITページ用リンク
         display_title = fname.replace("IT_", "", 1)
         display_title = display_title.split("_", 1)[-1] if "_" in display_title else display_title
         date_part = fname.replace("IT_", "", 1).split("_", 1)[0]
-        it_links += f"* [{date_part}： {display_title}]({safe_link})\n"
+        it_links += f"* [{date_part}： {display_title}]({simple_link})\n"
 
 # 1. ITトップページ（index.md）
 with open("docs/index.md", "w", encoding="utf-8") as f:
