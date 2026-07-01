@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-07-02： 優秀な人ばかりなのに、組織が重い ── AI時代に複利で膨ら](articles/IT_2026-07-02_優秀な人ばかりなのに、組織が重い ── AI時代に複利で膨ら.md)
+* [2026-07-02： メガドライブ実機上でLinuxを動かす「LinuxMD」が登](articles/IT_2026-07-02_メガドライブ実機上でLinuxを動かす「LinuxMD」が登.md)
+* [2026-07-02： 「Herdr」を使い始めたら、もう他のターミナルには戻れなく](articles/IT_2026-07-02_「Herdr」を使い始めたら、もう他のターミナルには戻れなく.md)
+* [2026-07-02： 「Claude Sonnet 5」が登場、Opus 4.8に](articles/IT_2026-07-02_「Claude Sonnet 5」が登場、Opus 4.8に.md)
+* [2026-07-02： [石野純也の「スマホとお金」] MacやiPadの値上げに見](articles/IT_2026-07-02_[石野純也の「スマホとお金」] MacやiPadの値上げに見.md)
+* [2026-07-02： PayPay、他社カード利用を8月末で終了　新方式「他社カー](articles/IT_2026-07-02_PayPay、他社カード利用を8月末で終了　新方式「他社カー.md)
+* [2026-07-02： Mistralが自動定理証明向けAI「Leanstral 1](articles/IT_2026-07-02_Mistralが自動定理証明向けAI「Leanstral 1.md)
+* [2026-07-02： Getting started with loops  Cl](articles/IT_2026-07-02_Getting started with loops  Cl.md)
+* [2026-07-02： AIエージェント経由でXのAPIを操作して「投稿検索」「トレ](articles/IT_2026-07-02_AIエージェント経由でXのAPIを操作して「投稿検索」「トレ.md)
+* [2026-07-02： 10 か月 CLI で使ってきた Claude Code を](articles/IT_2026-07-02_10 か月 CLI で使ってきた Claude Code を.md)
 * [2026-07-01： 風の谷のナウシカは、生成AIを30年前に予見？　ぞっとした展](articles/IT_2026-07-01_風の谷のナウシカは、生成AIを30年前に予見？　ぞっとした展.md)
 * [2026-07-01： 生産性が上がらないチームは、この問いを忘れている  サイボウ](articles/IT_2026-07-01_生産性が上がらないチームは、この問いを忘れている  サイボウ.md)
 * [2026-07-01： 子どもに買ったGoogle Pixelがバッテリー膨張で使用](articles/IT_2026-07-01_子どもに買ったGoogle Pixelがバッテリー膨張で使用.md)
