@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-07-03： プログラム全然読めなくてNullと0の違いすらわかってなかっ](articles/IT_2026-07-03_プログラム全然読めなくてNullと0の違いすらわかってなかっ.md)
+* [2026-07-03： 「充電器やバッテリーは品質と保証を重視したいからAnkerを](articles/IT_2026-07-03_「充電器やバッテリーは品質と保証を重視したいからAnkerを.md)
+* [2026-07-03： 「Claude in Microsoft Foundry」が](articles/IT_2026-07-03_「Claude in Microsoft Foundry」が.md)
+* [2026-07-03： tmuxでいいじゃんと思ってた僕がHerdr(fork)を常](articles/IT_2026-07-03_tmuxでいいじゃんと思ってた僕がHerdr(fork)を常.md)
+* [2026-07-03： Introducing the Safari MCP ser](articles/IT_2026-07-03_Introducing the Safari MCP ser.md)
+* [2026-07-03： GitHub - ogulcancelikherdr age](articles/IT_2026-07-03_GitHub - ogulcancelikherdr age.md)
+* [2026-07-03： Dynabook（旧東芝）がリコール中のノートPC用ACアダ](articles/IT_2026-07-03_Dynabook（旧東芝）がリコール中のノートPC用ACアダ.md)
+* [2026-07-03： DRAM価格操作か　サムスン、マイクロン、SKハイニックスに](articles/IT_2026-07-03_DRAM価格操作か　サムスン、マイクロン、SKハイニックスに.md)
+* [2026-07-03： DNSを基盤にAIエージェントに信頼できる名前を与える「Ag](articles/IT_2026-07-03_DNSを基盤にAIエージェントに信頼できる名前を与える「Ag.md)
+* [2026-07-03： AIバイブコーディングでゲームのリリースが急増か、わずか6カ](articles/IT_2026-07-03_AIバイブコーディングでゲームのリリースが急増か、わずか6カ.md)
 * [2026-07-02： 優秀な人ばかりなのに、組織が重い ── AI時代に複利で膨ら](articles/IT_2026-07-02_優秀な人ばかりなのに、組織が重い ── AI時代に複利で膨ら.md)
 * [2026-07-02： メガドライブ実機上でLinuxを動かす「LinuxMD」が登](articles/IT_2026-07-02_メガドライブ実機上でLinuxを動かす「LinuxMD」が登.md)
 * [2026-07-02： 「Herdr」を使い始めたら、もう他のターミナルには戻れなく](articles/IT_2026-07-02_「Herdr」を使い始めたら、もう他のターミナルには戻れなく.md)
