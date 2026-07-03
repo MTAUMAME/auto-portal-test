@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-07-04： プレゼンツールPeithoをつくっている](articles/IT_2026-07-04_プレゼンツールPeithoをつくっている.md)
+* [2026-07-04： パスワード入力のmaxlengthで長いパスワードで登録でき](articles/IT_2026-07-04_パスワード入力のmaxlengthで長いパスワードで登録でき.md)
+* [2026-07-04： とあるはてなーブックマークの解析（Claudeは個人評を避け](articles/IT_2026-07-04_とあるはてなーブックマークの解析（Claudeは個人評を避け.md)
+* [2026-07-04： Steam公式ゲーミングPC「Steam Machine」を](articles/IT_2026-07-04_Steam公式ゲーミングPC「Steam Machine」を.md)
+* [2026-07-04： Prompting Claude Fable 5](articles/IT_2026-07-04_Prompting Claude Fable 5.md)
+* [2026-07-04： LPI-Japan、「Linuxサーバー構築標準教科書」のU](articles/IT_2026-07-04_LPI-Japan、「Linuxサーバー構築標準教科書」のU.md)
+* [2026-07-04： Claude Code「Fable 5」にローカルLLM用シ](articles/IT_2026-07-04_Claude Code「Fable 5」にローカルLLM用シ.md)
+* [2026-07-04： AIに8割書かせたコード、半年運用の答え合わせ。効いた3つと](articles/IT_2026-07-04_AIに8割書かせたコード、半年運用の答え合わせ。効いた3つと.md)
+* [2026-07-04： AIで実装コストが低くなった今、エンジニアは上流に行くべきか](articles/IT_2026-07-04_AIで実装コストが低くなった今、エンジニアは上流に行くべきか.md)
+* [2026-07-04： 19年以上見過ごされていたLinux kernelのゼロデイ](articles/IT_2026-07-04_19年以上見過ごされていたLinux kernelのゼロデイ.md)
 * [2026-07-03： プログラム全然読めなくてNullと0の違いすらわかってなかっ](articles/IT_2026-07-03_プログラム全然読めなくてNullと0の違いすらわかってなかっ.md)
 * [2026-07-03： 「充電器やバッテリーは品質と保証を重視したいからAnkerを](articles/IT_2026-07-03_「充電器やバッテリーは品質と保証を重視したいからAnkerを.md)
 * [2026-07-03： 「Claude in Microsoft Foundry」が](articles/IT_2026-07-03_「Claude in Microsoft Foundry」が.md)
