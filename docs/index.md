@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-07-12： 誤爆で「ワインが20本も届いちゃう」　押せば注文できる“Am](articles/IT_2026-07-12_誤爆で「ワインが20本も届いちゃう」　押せば注文できる“Am.md)
+* [2026-07-12： 無料でAI向けのブラウザ自動化ができる「Browser4」](articles/IT_2026-07-12_無料でAI向けのブラウザ自動化ができる「Browser4」.md)
+* [2026-07-12： 「AI臭くない文章」を書かせることができる執筆エディタを作っ](articles/IT_2026-07-12_「AI臭くない文章」を書かせることができる執筆エディタを作っ.md)
+* [2026-07-12： [アップデート] AWS MCP Server が AI エ](articles/IT_2026-07-12_[アップデート] AWS MCP Server が AI エ.md)
+* [2026-07-12： Metaがユーザーからの反発を受けInstagramのAI機](articles/IT_2026-07-12_Metaがユーザーからの反発を受けInstagramのAI機.md)
+* [2026-07-12： LATERALでSQL実行時間を99.75%削減した話 - ](articles/IT_2026-07-12_LATERALでSQL実行時間を99.75%削減した話 - .md)
+* [2026-07-12： GitHub - yusukebeax The AI-era](articles/IT_2026-07-12_GitHub - yusukebeax The AI-era.md)
+* [2026-07-12： GitHub - kepanoobsidian-skills](articles/IT_2026-07-12_GitHub - kepanoobsidian-skills.md)
+* [2026-07-12： Ghost Font The Anti-AI Font On](articles/IT_2026-07-12_Ghost Font The Anti-AI Font On.md)
+* [2026-07-12： AI時代でも変わらない、業務自動化／効率化の考え方](articles/IT_2026-07-12_AI時代でも変わらない、業務自動化／効率化の考え方.md)
 * [2026-07-11： 安いエアコンが消える？　「エアコン2027年問題」でメーカー](articles/IT_2026-07-11_安いエアコンが消える？　「エアコン2027年問題」でメーカー.md)
 * [2026-07-11： ミズノ、「ピックルボール」市場に参入　競技人口7倍に拡大](articles/IT_2026-07-11_ミズノ、「ピックルボール」市場に参入　競技人口7倍に拡大.md)
 * [2026-07-11： 【無料】 ObsidianはAIの記憶保管には向いていない｜](articles/IT_2026-07-11_【無料】 ObsidianはAIの記憶保管には向いていない｜.md)
