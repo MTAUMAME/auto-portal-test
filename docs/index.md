@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-08-02： 宮本佳林『アイドルがAIと配信のシステムを全部作った話』](articles/IT_2026-08-02_宮本佳林『アイドルがAIと配信のシステムを全部作った話』.md)
+* [2026-08-02： 宮本佳林『HANAKIN配信システムの技術構成』](articles/IT_2026-08-02_宮本佳林『HANAKIN配信システムの技術構成』.md)
+* [2026-08-02： カンファレンス生態系の変化と CFP の功罪  blog.j](articles/IT_2026-08-02_カンファレンス生態系の変化と CFP の功罪  blog.j.md)
+* [2026-08-02： 「メタルサーガ 〜鋼の季節〜」がリマスター！ 埋もれた一作を](articles/IT_2026-08-02_「メタルサーガ 〜鋼の季節〜」がリマスター！ 埋もれた一作を.md)
+* [2026-08-02： skillspluginshtmlskillshtml at](articles/IT_2026-08-02_skillspluginshtmlskillshtml at.md)
+* [2026-08-02： Web Streams API 入門 ― 基本概念から実践ま](articles/IT_2026-08-02_Web Streams API 入門 ― 基本概念から実践ま.md)
+* [2026-08-02： Reframing the Agile Manifesto](articles/IT_2026-08-02_Reframing the Agile Manifesto.md)
+* [2026-08-02： Playwrightで業務E2Eテストのアーキテクチャを設計](articles/IT_2026-08-02_Playwrightで業務E2Eテストのアーキテクチャを設計.md)
+* [2026-08-02： Copilot活用に向けた「Microsoft Teamsで](articles/IT_2026-08-02_Copilot活用に向けた「Microsoft Teamsで.md)
+* [2026-08-02： AIを使わず地理演算でファンタジー地図を自動生成するWebツ](articles/IT_2026-08-02_AIを使わず地理演算でファンタジー地図を自動生成するWebツ.md)
 * [2026-07-31： 生成AIにおけるHTML画像出力の必要性と改善案としてのRH](articles/IT_2026-07-31_生成AIにおけるHTML画像出力の必要性と改善案としてのRH.md)
 * [2026-07-31： ホーム](articles/IT_2026-07-31_ホーム.md)
 * [2026-07-31： カセットテープの音声をPCに保存できる「USB Type-C](articles/IT_2026-07-31_カセットテープの音声をPCに保存できる「USB Type-C.md)
