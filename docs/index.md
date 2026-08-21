@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-08-22： 或るログ研究者](articles/IT_2026-08-22_或るログ研究者.md)
+* [2026-08-22： 「Claude Code×GPT」自律ループが凄すぎ、仕事が](articles/IT_2026-08-22_「Claude Code×GPT」自律ループが凄すぎ、仕事が.md)
+* [2026-08-22： claude のメモリを棚卸しする](articles/IT_2026-08-22_claude のメモリを棚卸しする.md)
+* [2026-08-22： React 19.3 browser() APIの使いみち～](articles/IT_2026-08-22_React 19.3 browser() APIの使いみち～.md)
+* [2026-08-22： NECのルーター「UNIVERGE IX-RIX-V」シリー](articles/IT_2026-08-22_NECのルーター「UNIVERGE IX-RIX-V」シリー.md)
+* [2026-08-22： HTML Can Do That](articles/IT_2026-08-22_HTML Can Do That.md)
+* [2026-08-22： Bun、バージョン1.4をリリース ——初のRust実装版 ](articles/IT_2026-08-22_Bun、バージョン1.4をリリース ——初のRust実装版 .md)
+* [2026-08-22： Apple のユニファイドメモリは何を実現したのか ── h](articles/IT_2026-08-22_Apple のユニファイドメモリは何を実現したのか ── h.md)
+* [2026-08-22： Anthropic、「Claude」の学習サイト「Claud](articles/IT_2026-08-22_Anthropic、「Claude」の学習サイト「Claud.md)
+* [2026-08-22： AIで生産性が3倍になった私たちが、チームを置き去りにした話](articles/IT_2026-08-22_AIで生産性が3倍になった私たちが、チームを置き去りにした話.md)
 * [2026-08-21： 脱構築される欲望：淫夢MAD文化におけるユーモア、クィア批評](articles/IT_2026-08-21_脱構築される欲望：淫夢MAD文化におけるユーモア、クィア批評.md)
 * [2026-08-21： 現実的なセキュリティ体制の構築 限られたリソースの中で成果を](articles/IT_2026-08-21_現実的なセキュリティ体制の構築 限られたリソースの中で成果を.md)
 * [2026-08-21： ユーザーアカウント不要で「Logi Options+」と同じ](articles/IT_2026-08-21_ユーザーアカウント不要で「Logi Options+」と同じ.md)
