@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-08-23： 目指すは、日本発IPで海外売上20兆円　経産省が新戦略を発表](articles/IT_2026-08-23_目指すは、日本発IPで海外売上20兆円　経産省が新戦略を発表.md)
+* [2026-08-23： 古い「Android」端末を「Raspberry Pi」の代](articles/IT_2026-08-23_古い「Android」端末を「Raspberry Pi」の代.md)
+* [2026-08-23： 三人寄ればチューリング完全](articles/IT_2026-08-23_三人寄ればチューリング完全.md)
+* [2026-08-23： スマホ依存からの脱却で中国でE Ink端末が一大ブームに　知](articles/IT_2026-08-23_スマホ依存からの脱却で中国でE Ink端末が一大ブームに　知.md)
+* [2026-08-23： Sentry 互換の GlitchTip を AI 開発のハ](articles/IT_2026-08-23_Sentry 互換の GlitchTip を AI 開発のハ.md)
+* [2026-08-23： NextDrive Cube J1を分解せずにrootを取り](articles/IT_2026-08-23_NextDrive Cube J1を分解せずにrootを取り.md)
+* [2026-08-23： Microsoft Entra ID アプリケーション開発入](articles/IT_2026-08-23_Microsoft Entra ID アプリケーション開発入.md)
+* [2026-08-23： Claude Code／Codexに中～大規模開発を任せるた](articles/IT_2026-08-23_Claude Code／Codexに中～大規模開発を任せるた.md)
+* [2026-08-23： AIモデルを選ぶ時に「実際に何をしているのか？」という内部構](articles/IT_2026-08-23_AIモデルを選ぶ時に「実際に何をしているのか？」という内部構.md)
+* [2026-08-23： AI に技術ブログを書かせてみてわかったこと](articles/IT_2026-08-23_AI に技術ブログを書かせてみてわかったこと.md)
 * [2026-08-22： 或るログ研究者](articles/IT_2026-08-22_或るログ研究者.md)
 * [2026-08-22： 「Claude Code×GPT」自律ループが凄すぎ、仕事が](articles/IT_2026-08-22_「Claude Code×GPT」自律ループが凄すぎ、仕事が.md)
 * [2026-08-22： claude のメモリを棚卸しする](articles/IT_2026-08-22_claude のメモリを棚卸しする.md)
