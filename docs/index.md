@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-08-27： 最後のYAPCJapanと聞いたのでYAPCAsiaJPAの](articles/IT_2026-08-27_最後のYAPCJapanと聞いたのでYAPCAsiaJPAの.md)
+* [2026-08-27： 個人で契約したChatGPTに、会社の情報を入力していいの？](articles/IT_2026-08-27_個人で契約したChatGPTに、会社の情報を入力していいの？.md)
+* [2026-08-27： ローカルでの開発やめませんか？Claude Code  Cu](articles/IT_2026-08-27_ローカルでの開発やめませんか？Claude Code  Cu.md)
+* [2026-08-27： 「オルカン高配当」登場　eMAXIS高配当全世界株式　9月3](articles/IT_2026-08-27_「オルカン高配当」登場　eMAXIS高配当全世界株式　9月3.md)
+* [2026-08-27： 「Twitter」が再始動  気になる、記になる…](articles/IT_2026-08-27_「Twitter」が再始動  気になる、記になる….md)
+* [2026-08-27： 「MainstreamOS」レビュー--「Linux」ディス](articles/IT_2026-08-27_「MainstreamOS」レビュー--「Linux」ディス.md)
+* [2026-08-27： 「ChatGPT」の無償プランにも予定済みタスクが開放 ～P](articles/IT_2026-08-27_「ChatGPT」の無償プランにも予定済みタスクが開放 ～P.md)
+* [2026-08-27： OH! NAMAE DOMAIN - ドメイン取得サービス](articles/IT_2026-08-27_OH! NAMAE DOMAIN - ドメイン取得サービス.md)
+* [2026-08-27： Claude Codeの規律をhookに降ろしたら、Haik](articles/IT_2026-08-27_Claude Codeの規律をhookに降ろしたら、Haik.md)
+* [2026-08-27： AI時代のプロダクト立ち上げ ── バクラク人事労務の開発プ](articles/IT_2026-08-27_AI時代のプロダクト立ち上げ ── バクラク人事労務の開発プ.md)
 * [2026-08-25： 謎のAI「Ox Alpha」が出現し無料テスト中、コンテキス](articles/IT_2026-08-25_謎のAI「Ox Alpha」が出現し無料テスト中、コンテキス.md)
 * [2026-08-25： 消費者庁、「ダークパターン」規制へ　特商法改正視野に中間取り](articles/IT_2026-08-25_消費者庁、「ダークパターン」規制へ　特商法改正視野に中間取り.md)
 * [2026-08-25： 優秀なエンジニアが書くDesign Docは何が違うのか -](articles/IT_2026-08-25_優秀なエンジニアが書くDesign Docは何が違うのか -.md)
