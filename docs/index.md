@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-08-29： 新型「Mac mini」「Mac Studio」の“数字”を](articles/IT_2026-08-29_新型「Mac mini」「Mac Studio」の“数字”を.md)
+* [2026-08-29： 並行開発に Orca がめちゃ便利](articles/IT_2026-08-29_並行開発に Orca がめちゃ便利.md)
+* [2026-08-29： ローカルLLMを直接実行できるマイコンボード「Arduino](articles/IT_2026-08-29_ローカルLLMを直接実行できるマイコンボード「Arduino.md)
+* [2026-08-29： グーグル、購入した電子書籍を「Gemini Notebook](articles/IT_2026-08-29_グーグル、購入した電子書籍を「Gemini Notebook.md)
+* [2026-08-29： 【週刊】はてなパークス アップデート＆注目スレッド（820〜](articles/IT_2026-08-29_【週刊】はてなパークス アップデート＆注目スレッド（820〜.md)
+* [2026-08-29： 「ミスを許さない手順書」を作ってみた 〜 個人的にはこれ以上](articles/IT_2026-08-29_「ミスを許さない手順書」を作ってみた 〜 個人的にはこれ以上.md)
+* [2026-08-29： 「Stable Diffusion XL」がCopilot+](articles/IT_2026-08-29_「Stable Diffusion XL」がCopilot+.md)
+* [2026-08-29： htmx 4.0.0 has been released!](articles/IT_2026-08-29_htmx 4.0.0 has been released!.md)
+* [2026-08-29： Cloudflareが1.1.1.1のDNSキャッシュを数十](articles/IT_2026-08-29_Cloudflareが1.1.1.1のDNSキャッシュを数十.md)
+* [2026-08-29： Claude Codeで開発以外の業務も爆速化しよう！](articles/IT_2026-08-29_Claude Codeで開発以外の業務も爆速化しよう！.md)
 * [2026-08-28： 開発をシフトレフトせよ――形式仕様でAIと事前に合意する開発](articles/IT_2026-08-28_開発をシフトレフトせよ――形式仕様でAIと事前に合意する開発.md)
 * [2026-08-28： 九州大学での Claude Code ハンズオンを、一人でも](articles/IT_2026-08-28_九州大学での Claude Code ハンズオンを、一人でも.md)
 * [2026-08-28： ローカル AWS エミュレータで Terraform を検証](articles/IT_2026-08-28_ローカル AWS エミュレータで Terraform を検証.md)
