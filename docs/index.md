@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-08-30： 無料のLM Studio、DFlashDSparkMTPで推](articles/IT_2026-08-30_無料のLM Studio、DFlashDSparkMTPで推.md)
+* [2026-08-30： 無料でDiscordのようなチャットサーバーをセルフホストで](articles/IT_2026-08-30_無料でDiscordのようなチャットサーバーをセルフホストで.md)
+* [2026-08-30： ローカルLLMの壁を打ち破る「Unsloth Desktop](articles/IT_2026-08-30_ローカルLLMの壁を打ち破る「Unsloth Desktop.md)
+* [2026-08-30： ベテランエンジニアのPRレビュー187件を分類してみたら、バ](articles/IT_2026-08-30_ベテランエンジニアのPRレビュー187件を分類してみたら、バ.md)
+* [2026-08-30： 「頭脳だけで正解を探したら、AIに大敗する」川邊健太郎が旅と](articles/IT_2026-08-30_「頭脳だけで正解を探したら、AIに大敗する」川邊健太郎が旅と.md)
+* [2026-08-30： The HUGS Stack — Hypermedia, U](articles/IT_2026-08-30_The HUGS Stack — Hypermedia, U.md)
+* [2026-08-30： GitHub - iannuttallbarkeep Man](articles/IT_2026-08-30_GitHub - iannuttallbarkeep Man.md)
+* [2026-08-30： GitHub - iKora128stop-ai-slop-](articles/IT_2026-08-30_GitHub - iKora128stop-ai-slop-.md)
+* [2026-08-30： Claude Codeの設計詰めスキル『grilling』の](articles/IT_2026-08-30_Claude Codeの設計詰めスキル『grilling』の.md)
+* [2026-08-30： AI語に親しむ](articles/IT_2026-08-30_AI語に親しむ.md)
 * [2026-08-29： 新型「Mac mini」「Mac Studio」の“数字”を](articles/IT_2026-08-29_新型「Mac mini」「Mac Studio」の“数字”を.md)
 * [2026-08-29： 並行開発に Orca がめちゃ便利](articles/IT_2026-08-29_並行開発に Orca がめちゃ便利.md)
 * [2026-08-29： ローカルLLMを直接実行できるマイコンボード「Arduino](articles/IT_2026-08-29_ローカルLLMを直接実行できるマイコンボード「Arduino.md)
