@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-09-04： 複数のAIサービスで障害発生　ChatGPT／Claude／](articles/IT_2026-09-04_複数のAIサービスで障害発生　ChatGPT／Claude／.md)
+* [2026-09-04： 放置していたWordPressが乗っ取られてWebShell](articles/IT_2026-09-04_放置していたWordPressが乗っ取られてWebShell.md)
+* [2026-09-04： 外付けHDDから掘り出した「かつての秋葉原」の写真が今や過去](articles/IT_2026-09-04_外付けHDDから掘り出した「かつての秋葉原」の写真が今や過去.md)
+* [2026-09-04： 変形してPCになる携帯型ゲーム機、エイサーがコンセプトモデル](articles/IT_2026-09-04_変形してPCになる携帯型ゲーム機、エイサーがコンセプトモデル.md)
+* [2026-09-04： オラに演算能力を分けてくれ！NVIDIA、家庭内のPCで分散](articles/IT_2026-09-04_オラに演算能力を分けてくれ！NVIDIA、家庭内のPCで分散.md)
+* [2026-09-04： なのにあなたはKindleで買うの？　Google Play](articles/IT_2026-09-04_なのにあなたはKindleで買うの？　Google Play.md)
+* [2026-09-04： skillspluginsshow-meskillsshow](articles/IT_2026-09-04_skillspluginsshow-meskillsshow.md)
+* [2026-09-04： WebMCPがアツいので見てほしい  DevelopersI](articles/IT_2026-09-04_WebMCPがアツいので見てほしい  DevelopersI.md)
+* [2026-09-04： Microsoft Officeの責任者が「AIが生成した質](articles/IT_2026-09-04_Microsoft Officeの責任者が「AIが生成した質.md)
+* [2026-09-04： AIを使いこなす技術チームの育て方、GitLab社内の実践か](articles/IT_2026-09-04_AIを使いこなす技術チームの育て方、GitLab社内の実践か.md)
 * [2026-09-03： 自分で出した本を、国会図書館に納本してきた - Nothin](articles/IT_2026-09-03_自分で出した本を、国会図書館に納本してきた - Nothin.md)
 * [2026-09-03： 米NY市、公立校でのAI利用禁止へ 中学生以下対象](articles/IT_2026-09-03_米NY市、公立校でのAI利用禁止へ 中学生以下対象.md)
 * [2026-09-03： 委託業者が無断でAI利用か――ヨルシカ、ライブ映像上映会のチ](articles/IT_2026-09-03_委託業者が無断でAI利用か――ヨルシカ、ライブ映像上映会のチ.md)
