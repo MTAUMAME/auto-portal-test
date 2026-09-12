@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-09-12： 音楽生成AI「YuE2」が無料公開される、有料のSuno 5](articles/IT_2026-09-12_音楽生成AI「YuE2」が無料公開される、有料のSuno 5.md)
+* [2026-09-12： 生成AI以前と以後でエンジニアの文章はどう変わったのか Qi](articles/IT_2026-09-12_生成AI以前と以後でエンジニアの文章はどう変わったのか Qi.md)
+* [2026-09-12： 日本で自然と自動運転が解禁されることはない](articles/IT_2026-09-12_日本で自然と自動運転が解禁されることはない.md)
+* [2026-09-12： ブルーレイってどうやって観ればいい 「超かぐや姫!」特装限定](articles/IT_2026-09-12_ブルーレイってどうやって観ればいい 「超かぐや姫!」特装限定.md)
+* [2026-09-12： デジタル庁のガバメントソリューションサービス(GSS)への不](articles/IT_2026-09-12_デジタル庁のガバメントソリューションサービス(GSS)への不.md)
+* [2026-09-12： グラボ高騰止まらず、「NVIDIA GeForce RTX ](articles/IT_2026-09-12_グラボ高騰止まらず、「NVIDIA GeForce RTX .md)
+* [2026-09-12： WordPressサイトのセキュリティ対策 – 最低限設定し](articles/IT_2026-09-12_WordPressサイトのセキュリティ対策 – 最低限設定し.md)
+* [2026-09-12： Rethinking skills and prompts ](articles/IT_2026-09-12_Rethinking skills and prompts .md)
+* [2026-09-12： Games  OpenAI Developers](articles/IT_2026-09-12_Games  OpenAI Developers.md)
+* [2026-09-12： 2026年度末の「Suicaエリア統合」　気になることをJR](articles/IT_2026-09-12_2026年度末の「Suicaエリア統合」　気になることをJR.md)
 * [2026-09-11： 商用も無料のPDF編集ソフト「PDF MARIN」が登場、黒](articles/IT_2026-09-11_商用も無料のPDF編集ソフト「PDF MARIN」が登場、黒.md)
 * [2026-09-11： 人生をあきらめたら希死念慮がなくなった](articles/IT_2026-09-11_人生をあきらめたら希死念慮がなくなった.md)
 * [2026-09-11： もしMicrosoftがスマホを出していたら覇権を取れていた](articles/IT_2026-09-11_もしMicrosoftがスマホを出していたら覇権を取れていた.md)
