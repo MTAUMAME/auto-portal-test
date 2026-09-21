@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-09-21： 大分県の別府温泉では約100℃の源泉を竹で細かく分散して通す](articles/IT_2026-09-21_大分県の別府温泉では約100℃の源泉を竹で細かく分散して通す.md)
+* [2026-09-21： 国産AIへ機械に「マイナンバー」　官民でデータ収集、DMG森](articles/IT_2026-09-21_国産AIへ機械に「マイナンバー」　官民でデータ収集、DMG森.md)
+* [2026-09-21： iPhone Duoは重すぎる？ Pro Maxを1年使った](articles/IT_2026-09-21_iPhone Duoは重すぎる？ Pro Maxを1年使った.md)
+* [2026-09-21： Google AI Pro(2,900円)へのAIサブスク統](articles/IT_2026-09-21_Google AI Pro(2,900円)へのAIサブスク統.md)
+* [2026-09-21： GitHub - minorun365minorun-mar](articles/IT_2026-09-21_GitHub - minorun365minorun-mar.md)
+* [2026-09-21： GitHub - minorun365agent-build](articles/IT_2026-09-21_GitHub - minorun365agent-build.md)
+* [2026-09-21： GitHub - fallow-rsfallow Codeb](articles/IT_2026-09-21_GitHub - fallow-rsfallow Codeb.md)
+* [2026-09-21： Geminiが使えるスマートウォッチ「Google Pixe](articles/IT_2026-09-21_Geminiが使えるスマートウォッチ「Google Pixe.md)
+* [2026-09-21： AIバブルはこうして終わる　金利高と収穫逓減「死の交差」 -](articles/IT_2026-09-21_AIバブルはこうして終わる　金利高と収穫逓減「死の交差」 -.md)
+* [2026-09-21： AIなら30秒でできることを、なぜ30分かけてやるのか｜豊福](articles/IT_2026-09-21_AIなら30秒でできることを、なぜ30分かけてやるのか｜豊福.md)
 * [2026-09-20： 私たちはなぜキーボードでローマ字入力をしているのか - 株式](articles/IT_2026-09-20_私たちはなぜキーボードでローマ字入力をしているのか - 株式.md)
 * [2026-09-20： 東プレから分割キーボード「REALFORCE RS1」登場｜](articles/IT_2026-09-20_東プレから分割キーボード「REALFORCE RS1」登場｜.md)
 * [2026-09-20： 全社に OpenCode + LiteLLM を導入してコス](articles/IT_2026-09-20_全社に OpenCode + LiteLLM を導入してコス.md)
