@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-09-24： 中国ECサイトで販売される「スマホ自動タップマシン」 単純な](articles/IT_2026-09-24_中国ECサイトで販売される「スマホ自動タップマシン」 単純な.md)
+* [2026-09-24： グーグルマップが遅い経路を表示してくるときに試したいこと -](articles/IT_2026-09-24_グーグルマップが遅い経路を表示してくるときに試したいこと -.md)
+* [2026-09-24： まさかの「Appleが神コスパ」になっちゃった：新型M6 M](articles/IT_2026-09-24_まさかの「Appleが神コスパ」になっちゃった：新型M6 M.md)
+* [2026-09-24： loading.dev](articles/IT_2026-09-24_loading.dev.md)
+* [2026-09-24： UXの未来：AIでUIが当たり前に作れる時代、シニアデザイナ](articles/IT_2026-09-24_UXの未来：AIでUIが当たり前に作れる時代、シニアデザイナ.md)
+* [2026-09-24： SREとは何か、AWSでどう始めるか](articles/IT_2026-09-24_SREとは何か、AWSでどう始めるか.md)
+* [2026-09-24： Herdr Annotate で効率的なAIコーディングレビ](articles/IT_2026-09-24_Herdr Annotate で効率的なAIコーディングレビ.md)
+* [2026-09-24： Codexを使うなら、SkillsとPluginsを押さえて](articles/IT_2026-09-24_Codexを使うなら、SkillsとPluginsを押さえて.md)
+* [2026-09-24： Cloudflare、Python Wrokersを正式サー](articles/IT_2026-09-24_Cloudflare、Python Wrokersを正式サー.md)
+* [2026-09-24： Claude Codeが「AGENTS」に対応。CLA](articles/IT_2026-09-24_Claude Codeが「AGENTS」に対応。CLA.md)
 * [2026-09-23： 思考の外注割合を増やし、理解は外注しない - Konifar](articles/IT_2026-09-23_思考の外注割合を増やし、理解は外注しない - Konifar.md)
 * [2026-09-23： 大量注文が来てた古本屋(Amazon)だけど質問ある？](articles/IT_2026-09-23_大量注文が来てた古本屋(Amazon)だけど質問ある？.md)
 * [2026-09-23： コロンビアで乗ったUberのおっちゃん「日本人は人生を良くし](articles/IT_2026-09-23_コロンビアで乗ったUberのおっちゃん「日本人は人生を良くし.md)
