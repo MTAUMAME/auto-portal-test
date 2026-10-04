@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-10-04： ＡＩの社会実装に関する情報提供のお願い  規制改革 - 内閣](articles/IT_2026-10-04_ＡＩの社会実装に関する情報提供のお願い  規制改革 - 内閣.md)
+* [2026-10-04： 高市首相がAppleに要請――「自殺防止機能の搭載を」　生成](articles/IT_2026-10-04_高市首相がAppleに要請――「自殺防止機能の搭載を」　生成.md)
+* [2026-10-04： 貧乏な子どもが“稼げる大人”になる条件とは？　米ハーバード大](articles/IT_2026-10-04_貧乏な子どもが“稼げる大人”になる条件とは？　米ハーバード大.md)
+* [2026-10-04： 情報処理安全確保支援士の資格登録を削除する - misc.l](articles/IT_2026-10-04_情報処理安全確保支援士の資格登録を削除する - misc.l.md)
+* [2026-10-04： 地面に落としたネジをGrokに探してもらったらすぐ見つけてく](articles/IT_2026-10-04_地面に落としたネジをGrokに探してもらったらすぐ見つけてく.md)
+* [2026-10-04： 「決め方」の渡し方  How to hand over th](articles/IT_2026-10-04_「決め方」の渡し方  How to hand over th.md)
+* [2026-10-04： Microsoft Digital Defense Repo](articles/IT_2026-10-04_Microsoft Digital Defense Repo.md)
+* [2026-10-04： Codex Security ・ Claude Securi](articles/IT_2026-10-04_Codex Security ・ Claude Securi.md)
+* [2026-10-04： CSS の margin-trim でコンテナーの端の余白を](articles/IT_2026-10-04_CSS の margin-trim でコンテナーの端の余白を.md)
+* [2026-10-04： Book of Shapes](articles/IT_2026-10-04_Book of Shapes.md)
 * [2026-10-03： 自作GPTにKVキャッシュを実装し、プロンプトキャッシュの仕](articles/IT_2026-10-03_自作GPTにKVキャッシュを実装し、プロンプトキャッシュの仕.md)
 * [2026-10-03： 普通のメガネなのに網膜投影　TDKがレンズに埋め込める透明ミ](articles/IT_2026-10-03_普通のメガネなのに網膜投影　TDKがレンズに埋め込める透明ミ.md)
 * [2026-10-03： 新しい日本語推敲スキル「yomiyasu」がバズっていたので](articles/IT_2026-10-03_新しい日本語推敲スキル「yomiyasu」がバズっていたので.md)
