@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-10-29： 核戦争でも大停電でもない…超知能となったAIが人類を滅ぼすま](articles/IT_2026-10-29_核戦争でも大停電でもない…超知能となったAIが人類を滅ぼすま.md)
+* [2026-10-29： もしあなたの免許証画像が漏洩したら？ 対処法をIPAが公開　](articles/IT_2026-10-29_もしあなたの免許証画像が漏洩したら？ 対処法をIPAが公開　.md)
+* [2026-10-29： いいから休め - Black October が終わる今、セ](articles/IT_2026-10-29_いいから休め - Black October が終わる今、セ.md)
+* [2026-10-29： pfpdf — Markdown から、印刷品質の PDF ](articles/IT_2026-10-29_pfpdf — Markdown から、印刷品質の PDF .md)
+* [2026-10-29： Windows XPは25周年。あの丘、もう跡形もなかった ](articles/IT_2026-10-29_Windows XPは25周年。あの丘、もう跡形もなかった .md)
+* [2026-10-29： MarkdownからきれいなPDFを作るCLIツールpfpd](articles/IT_2026-10-29_MarkdownからきれいなPDFを作るCLIツールpfpd.md)
+* [2026-10-29： Gemini 4 Carbon our next front](articles/IT_2026-10-29_Gemini 4 Carbon our next front.md)
+* [2026-10-29： Cloudflare、AIモデル「Clairic」をプレビュ](articles/IT_2026-10-29_Cloudflare、AIモデル「Clairic」をプレビュ.md)
+* [2026-10-29： Apple、初のタッチ対応「MacBook Pro」発表　新](articles/IT_2026-10-29_Apple、初のタッチ対応「MacBook Pro」発表　新.md)
+* [2026-10-29： AI時代のシニアエンジニアとは](articles/IT_2026-10-29_AI時代のシニアエンジニアとは.md)
 * [2026-10-28： 脱GPUが加速、OracleもGoogle製TPUを選択](articles/IT_2026-10-28_脱GPUが加速、OracleもGoogle製TPUを選択.md)
 * [2026-10-28： 公開された情報と氏名など同一の人物、ＧＭＯクラウドサービスの](articles/IT_2026-10-28_公開された情報と氏名など同一の人物、ＧＭＯクラウドサービスの.md)
 * [2026-10-28： スライド作成入門_2024.indd](articles/IT_2026-10-28_スライド作成入門_2024.indd.md)
