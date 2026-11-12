@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-11-12： 人手不足解消へ ファミマがフィジカルAI導入  NHKニュー](articles/IT_2026-11-12_人手不足解消へ ファミマがフィジカルAI導入  NHKニュー.md)
+* [2026-11-12： グーグル、新ドメイン「.eat」「.fly」「.here」の](articles/IT_2026-11-12_グーグル、新ドメイン「.eat」「.fly」「.here」の.md)
+* [2026-11-12： インシデント調査報告書チェックリスト公開のお知らせ](articles/IT_2026-11-12_インシデント調査報告書チェックリスト公開のお知らせ.md)
+* [2026-11-12： お客様の前に立つフロント人材になるために、技術以外の最小構成](articles/IT_2026-11-12_お客様の前に立つフロント人材になるために、技術以外の最小構成.md)
+* [2026-11-12： 【特集】 AIが“ダチ”になった。Meta「Muse」と過ご](articles/IT_2026-11-12_【特集】 AIが“ダチ”になった。Meta「Muse」と過ご.md)
+* [2026-11-12： software-factory-mode-2026aki ](articles/IT_2026-11-12_software-factory-mode-2026aki .md)
+* [2026-11-12： Modern Web Guidance 1.0 コーディング](articles/IT_2026-11-12_Modern Web Guidance 1.0 コーディング.md)
+* [2026-11-12： GitHub - awsaws-emulator AWS E](articles/IT_2026-11-12_GitHub - awsaws-emulator AWS E.md)
+* [2026-11-12： AWS Emulator and the engineer'](articles/IT_2026-11-12_AWS Emulator and the engineer'.md)
+* [2026-11-12： 2026 年、すべての主要ブラウザで使えるようになった CS](articles/IT_2026-11-12_2026 年、すべての主要ブラウザで使えるようになった CS.md)
 * [2026-11-11： 無料のプロジェクト管理ツール「Leantime」、カンバン・](articles/IT_2026-11-11_無料のプロジェクト管理ツール「Leantime」、カンバン・.md)
 * [2026-11-11： 氏名や電話番号、聞きません　漏洩問題で企業側、個人情報手放す](articles/IT_2026-11-11_氏名や電話番号、聞きません　漏洩問題で企業側、個人情報手放す.md)
 * [2026-11-11： おやすみ、インターネットの時代](articles/IT_2026-11-11_おやすみ、インターネットの時代.md)
