@@ -4,6 +4,16 @@ ITと最新テクノロジーの比較まとめです。
 
 ## 💻 IT・ガジェット最新記事
 
+* [2026-11-22： 無料でセルフホストできWindows・macOS・Linux](articles/IT_2026-11-22_無料でセルフホストできWindows・macOS・Linux.md)
+* [2026-11-22： 新宿駅で財布を忘れて家に帰れない女の子から「PayPay10](articles/IT_2026-11-22_新宿駅で財布を忘れて家に帰れない女の子から「PayPay10.md)
+* [2026-11-22： 情報漏えいを公表しないリスクの要点整理 - Qiita](articles/IT_2026-11-22_情報漏えいを公表しないリスクの要点整理 - Qiita.md)
+* [2026-11-22： 寝てる間に自動で動くAIエージェントを誰でも作れる：10分で](articles/IT_2026-11-22_寝てる間に自動で動くAIエージェントを誰でも作れる：10分で.md)
+* [2026-11-22： リーマン予想の証明の検証は現在どこまで進んでいるか｜加藤文元](articles/IT_2026-11-22_リーマン予想の証明の検証は現在どこまで進んでいるか｜加藤文元.md)
+* [2026-11-22： 「AIが私を追い越した」　リーマン予想「証明」の数学者自身も](articles/IT_2026-11-22_「AIが私を追い越した」　リーマン予想「証明」の数学者自身も.md)
+* [2026-11-22： Lean verification of the Riema](articles/IT_2026-11-22_Lean verification of the Riema.md)
+* [2026-11-22： KARTEを選んだのは顧客の私じゃない｜しがないサラリーマン](articles/IT_2026-11-22_KARTEを選んだのは顧客の私じゃない｜しがないサラリーマン.md)
+* [2026-11-22： GitHub - mitakuandon A one-per](articles/IT_2026-11-22_GitHub - mitakuandon A one-per.md)
+* [2026-11-22： GitHub - fkubotaunderstand-mod](articles/IT_2026-11-22_GitHub - fkubotaunderstand-mod.md)
 * [2026-11-21： モダンな情シスは、AIエージェントを育て、任せ、圧倒的な生産](articles/IT_2026-11-21_モダンな情シスは、AIエージェントを育て、任せ、圧倒的な生産.md)
 * [2026-11-21： どれだけGeminiが賢くなってもAIオタクが避ける理由。つ](articles/IT_2026-11-21_どれだけGeminiが賢くなってもAIオタクが避ける理由。つ.md)
 * [2026-11-21： 【分析】「私はMAGAではない」　マスク氏の方向転換が発する](articles/IT_2026-11-21_【分析】「私はMAGAではない」　マスク氏の方向転換が発する.md)
